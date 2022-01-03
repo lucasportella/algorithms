@@ -1,5 +1,6 @@
 def is_palindrome_recursive(word, low_index, high_index):
-    if high_index < 0: return False
+    if high_index < 0:
+        return False
     reversed_word = reverse(word, low_index, high_index)
     if reversed_word == word:
         return True
